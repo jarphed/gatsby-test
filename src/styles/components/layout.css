@@ -22,13 +22,13 @@ nav a {
 }
 
 nav a:hover {
-    @apply .no-underline text-grey;
+    @apply .no-underline .text-grey;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
 }
 
 ul {
-    @apply .no-underline text-white;
+    @apply .no-underline .text-white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 h1 {
-    @apply .text-grey;
+    @apply .text-white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
 }
