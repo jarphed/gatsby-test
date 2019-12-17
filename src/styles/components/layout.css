@@ -1,0 +1,49 @@
+Link {
+    @apply .no-underline;
+}
+
+a {
+    @apply .no-underline .text-teal;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+nav a {
+    @apply .no-underline .text-white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+nav a:hover {
+    @apply .no-underline text-grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+ul {
+    @apply .no-underline text-white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+p {
+    @apply .text-white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+body {
+    @apply .m-0 .bg-black;
+}
+
+h1 {
+    @apply .text-grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+h1 a {
+    @apply .text-white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
