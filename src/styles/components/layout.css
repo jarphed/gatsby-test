@@ -41,6 +41,7 @@ p {
 
 body {
     @apply .m-0 .bg-black;
+    overflow: hidden;
 }
 
 h1 {
@@ -57,11 +58,11 @@ h1 a {
 
 /* Position and sizing of burger button */
 .bm-burger-button {
+    @apply .mr-20 .mt-16;
     position: fixed;
     width: 36px;
     height: 30px;
-    right: 36px;
-    top: 60px;
+    right: 0px;
   }
   
   /* Color/shape of burger icon bars */
@@ -82,7 +83,7 @@ h1 a {
   
   /* Color/shape of close button cross */
   .bm-cross {
-    background: #bdc3c7;
+    @apply .hidden;
   }
   
   /*
@@ -90,34 +91,47 @@ h1 a {
   Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
   */
   .bm-menu-wrap {
+    @apply .bg-teal;
     position: fixed;
     height: 100%;
   }
   
   /* General sidebar styles */
   .bm-menu {
-    background: #373a47;
+    background-image: url("https://images.unsplash.com/photo-1576485055783-a7a5d64192f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2675&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @apply .bg-orange;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
     padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
+    font-size: 2.15em;
   }
   
   /* Morph shape necessary with bubble or elastic */
   .bm-morph-shape {
-    fill: #373a47;
+    fill: #f6993f;
+    mix-blend-mode: color;
   }
   
   /* Wrapper for item list */
   .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
+    @apply .p-4 .mt-32;
   }
   
   /* Individual item */
   .bm-item {
+
+    @apply .text-white .z-10;
     display: inline-block;
+  } 
+  
+  .bm-item:focus {
+    outline: 0;
   }
+  
   
   /* Styling of overlay */
   .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
+    fill: #000;
   }

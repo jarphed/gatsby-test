@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import '../styles/tailwind.css';
-import { elastic as Menu } from 'react-burger-menu'
+import { bubble as Menu } from 'react-burger-menu'
+
+
+var isMenuOpen = function(state) {
+    return state.isOpen;
+  };
 
 class StyledMenu extends React.Component {
     showSettings (event) {
@@ -11,7 +16,7 @@ class StyledMenu extends React.Component {
     render () {
       // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
         return (
-            <Menu right className="list-reset flex justify-between">
+            <Menu right onStateChange={ isMenuOpen } className="list-reset flex justify-between">
                 <Link id="home" className="menu-item" to="/">Home</Link>
                 <Link id="about" className="menu-item" to="/blog">Blog</Link>
                 <Link id="about" className="menu-item" to="/about">About</Link>
